@@ -1,6 +1,7 @@
 let num = document.querySelector('#txtn')
 let viewResult = document.querySelector('#seltab')
 viewResult.innerHTML = ''
+let valores = [];
 
 
 function adicionar() {
@@ -9,7 +10,7 @@ function adicionar() {
         alert('Adicione os números')
     } else {
         let n = Number(num.value);
-        let valores = [];
+        
             
             let item = document.createElement('option')
             item.text = `Valor ${n} adicionado.`
@@ -19,4 +20,8 @@ function adicionar() {
     }
 }
 
+
+function finalizar () {
+   console.log(valores)
+}
 
